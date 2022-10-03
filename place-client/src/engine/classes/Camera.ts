@@ -181,7 +181,7 @@ export default class Camera {
                 const destX = (touch1.clientX + touch2.clientX) / 2;
                 const destY = (touch1.clientY + touch2.clientY) / 2;
 
-                if (this.prevVectorDiff !== touchDistance) {
+                if (this.prevVectorDiff && this.prevVectorDiff !== touchDistance) {
                     this.isPinching = true;
                     this.zoomAt((touchDistance - this.prevVectorDiff) / this.zoomSpeed, new Vec2(destX, destY));
                 }

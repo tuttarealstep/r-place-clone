@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  client:
+    env_file: .env
+    image: plclone/place-websocket
+    build: .
+    tty: true
+    stdin_open: true
+    working_dir: /app
+    ports:
+      - 7676:7676
+    volumes:
+      - .:/app

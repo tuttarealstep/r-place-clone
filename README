@@ -1,0 +1,9 @@
+- FARE API
+- FARE WEBSOCKET SERVER
+- RISCRIVERE CLIENT
+
+
+API
+    /api/place/draw
+        Per piazzare tile (x,y,colore,user)
+    
